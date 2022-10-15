@@ -9,7 +9,7 @@ public class SistemaDescontos {
     double valor = sc.nextDouble();
 
     System.out.println("Qual a forma de pagamento? CREDITO, DEBITO, CHQUE, BOLETO, DINHEIRO");
-    String formaPagamento = sc.next();
+    String formaPagamento = sc.nextLine().toUpperCase();
 
     switch (formaPagamento) {
       case ("CREDITO"), ("DEBITO") -> valor = valor - (valor * 0.03);
